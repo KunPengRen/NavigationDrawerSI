@@ -17,9 +17,9 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            zipAlignEnabled true
+            zipAlign true
         }
         android.applicationVariants.all{ variant ->
             variant.mergeAssets.doFirst {
